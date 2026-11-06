@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><!doctype html>
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -32,7 +32,7 @@
 </head><body><header><div class="wrap nav"><a class="brand" href="index.html#home">QUANTA <span>TUTORING</span></a><nav aria-label="Main navigation"><a href="index.html#philosophy">Philosophy</a><a href="index.html#subjects">Subjects</a><a href="index.html#about">About</a><a href="index.html#faq">FAQ</a><a href="index.html#contact">Contact</a></nav></div></header>
 <main><section class="section alt"><div class="wrap"><div class="eyebrow">Parent perspectives</div><h1 style="font-family:Georgia,serif;color:var(--purple);font-size:clamp(2.1rem,5vw,3.4rem)">Testimonials</h1><p class="intro">Thoughts shared by families about their experience with Quanta Tutoring. Testimonials are published only with permission.</p><div id="all-reviews" class="review-grid"><p class="empty-review">No testimonials have been published yet.</p></div></div></section>
 <section class="section" id="share"><div class="wrap form-layout"><div class="eyebrow">Share your experience</div><h2>We'd love to hear from you.</h2><p>Parents and guardians can share feedback below. No Google account or sign-in is required. Submissions are reviewed privately before any publication.</p>
-<form id="testimonial-form" method="POST" action="" data-endpoint="https://formspree.io/f/mpppnead">
+<form id="testimonial-form" method="POST" action="https://formspree.io/f/mpppnead">
 <div class="field"><label for="parent-name">Your name (for private verification)</label><input id="parent-name" name="parent_name" autocomplete="name" maxlength="100" required></div>
 <div class="field"><label for="email">Email (private; never displayed)</label><input id="email" name="email" type="email" autocomplete="email" maxlength="180" required></div>
 <div class="field"><label for="subject">Subject studied</label><select id="subject" name="subject" required><option value="">Choose a subject</option><option>Pre-Algebra</option><option>Algebra I / II</option><option>Geometry</option><option>Precalculus</option><option>AP Calculus AB / BC</option><option>AP Statistics</option><option>AP Physics 1 / 2</option><option>AP Physics C</option><option>IB Physics SL / HL</option><option>Other Mathematics / Physics</option></select></div>
@@ -42,4 +42,4 @@
 <p class="notice">Please avoid including a student's full name, school, or other sensitive details. Feedback may be selected for publication, but it will not be posted automatically.</p>
 <button class="button" type="submit" style="border:0;font:inherit;cursor:pointer">Submit testimonial</button><p id="form-status" role="status" aria-live="polite" class="notice"></p></form>
 </div></section></main><footer><div class="wrap"><strong>Quanta Tutoring</strong> · Inquiry · Reflection · Realization<br>© <span id="year">2026</span> Quanta Tutoring. All rights reserved.</div></footer>
-<script>document.getElementById('year').textContent=new Date().getFullYear();const form=document.getElementById('testimonial-form');form.addEventListener('submit',e=>{const endpoint=form.dataset.endpoint;if(!endpoint||endpoint==='https://formspree.io/f/mpppnead'){e.preventDefault();document.getElementById('form-status').textContent='Submissions are not yet enabled. Please contact Quanta Tutoring directly until the form is connected.';return;}form.action=endpoint;});</script><script src="reviews.js" defer></script></body></html>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script><script src="reviews.js" defer></script></body></html>
