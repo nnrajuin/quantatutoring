@@ -35,6 +35,11 @@
 .review-controls button:disabled{opacity:.3;cursor:default}
 .review-controls button:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
 .review-controls[hidden]{display:none}
+/* Keep testimonials in one swipeable row at every viewport width. */
+.review-grid{display:flex;flex-direction:row;flex-wrap:nowrap;overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;touch-action:pan-x pan-y;scroll-snap-type:x mandatory;width:100%;max-width:100%}
+.review-grid>.review-card{display:block;flex:0 0 calc((100% - 40px)/3);min-width:0;scroll-snap-align:start}
+@media(max-width:900px){.review-grid>.review-card{flex-basis:calc((100% - 20px)/2)}}
+@media(max-width:600px){.review-grid>.review-card{flex-basis:88%}}
 @media(prefers-reduced-motion:reduce){.review-grid{scroll-behavior:auto}}.review-card{background:white;border:1px solid #e9e1ee;border-radius:12px;padding:25px}.review-card blockquote{margin:0 0 18px;font-family:Georgia,serif;font-size:1.08rem}.review-card .review-by{color:var(--purple);font-weight:700}.review-card .review-subject{color:var(--muted);font-size:.88rem}.form-layout{max-width:720px}.field{margin:0 0 18px}.field label{display:block;font-weight:700;margin-bottom:6px}.field input,.field select,.field textarea{width:100%;font:inherit;padding:11px 13px;border:1px solid #bcb2c5;border-radius:7px;background:white}.field textarea{min-height:145px;resize:vertical}.checkline{display:flex;gap:10px;align-items:flex-start;margin:14px 0}.checkline input{margin-top:7px}.notice{font-size:.9rem;color:var(--muted)}.empty-review{color:var(--muted)}
 </style>
 </head><body><header><div class="wrap nav"><a class="brand" href="index.html#home">QUANTA <span>TUTORING</span></a><nav aria-label="Main navigation"><a href="index.html#philosophy">Philosophy</a><a href="index.html#subjects">Subjects</a><a href="index.html#about">About</a><a href="index.html#faq">FAQ</a><a href="index.html#contact">Contact</a></nav></div></header>
